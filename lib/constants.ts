@@ -1,6 +1,6 @@
 export const COMPANY = {
-  name: "しくみスタジオ",
-  nameEn: "Shikumi Studio",
+  name: "株式会社Yanacode",
+  nameEn: "Shikumi Studio Inc.",
   description:
     "AIとDXの力で、中小企業の「しくみ」をデザインする。コンサルティング・コミュニティ・セミナーを通じて、ビジネスの変革を支援します。",
   representative: {
@@ -31,7 +31,7 @@ export const SERVICES = [
     description:
       "中小企業に特化したAI導入・DX推進のコンサルティング。現場の課題を理解し、実行可能な変革プランを一緒に設計します。",
     image:
-      "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
+      "https://images.unsplash.com/photo-1717501217835-821cc3aefbc3?w=800&q=80",
   },
   {
     id: "community",
@@ -39,7 +39,7 @@ export const SERVICES = [
     description:
       "AI活用に関心のあるビジネスパーソンが集まるコミュニティ。最新情報の共有や実践的なナレッジ交換の場を提供します。",
     image:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
+      "https://images.unsplash.com/photo-1717501217780-03809da32358?w=800&q=80",
   },
   {
     id: "seminar",
@@ -47,16 +47,16 @@ export const SERVICES = [
     description:
       "AIインフルエンサーとしての知見を活かした実践的なセミナー。基礎から応用まで、すぐに使える知識をお届けします。",
     image:
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+      "https://images.unsplash.com/photo-1717501217710-775828219832?w=800&q=80",
   },
 ] as const;
 
 export const NAV_ITEMS = [
-  { label: "About", href: "/#about" },
-  { label: "Services", href: "/#services" },
-  { label: "Profile", href: "/#profile" },
-  { label: "FAQ", href: "/#faq" },
-  { label: "Contact", href: "/#contact" },
+  { label: "私たちについて", href: "/#about" },
+  { label: "事業内容", href: "/#services" },
+  { label: "会社概要", href: "/#company" },
+  { label: "よくある質問", href: "/#faq" },
+  { label: "お問い合わせ", href: "/#contact" },
 ] as const;
 
 export const SERVICE_FLOW = [
@@ -64,26 +64,34 @@ export const SERVICE_FLOW = [
     step: 1,
     title: "お問い合わせ",
     description:
-      "まずはお気軽にお問い合わせください。現在のお悩みや課題感をお聞かせください。",
+      "まずはお気軽にお問い合わせフォームまたはSNSのDMからご連絡ください。「AIって何から始めればいいの？」「業務をもっと効率化したい」など、漠然としたお悩みでも大丈夫です。担当者より2営業日以内にご返信いたします。",
   },
   {
     step: 2,
-    title: "ヒアリング",
+    title: "ヒアリング・現状分析",
     description:
-      "オンラインまたは対面で、現状の業務フローや課題を詳しくヒアリングします。",
+      "オンライン（Zoom / Google Meet）または対面にて、60〜90分のヒアリングを実施します。現在の業務フロー、使用中のツール、チーム体制、抱えている課題を詳しくお伺いし、AI・DX導入の可能性を一緒に整理します。",
   },
   {
     step: 3,
-    title: "ご提案",
+    title: "ご提案・プランニング",
     description:
-      "ヒアリング内容をもとに、最適なソリューションと実行プランをご提案します。",
+      "ヒアリング内容をもとに、御社に最適なソリューションと具体的な実行プランをまとめた提案書をご提出します。導入するツール、スケジュール、費用感、期待される効果を明確にお示しします。",
   },
   {
     step: 4,
-    title: "実行支援",
+    title: "実行・伴走支援",
     description:
-      "プランに基づき、導入から定着まで伴走型で支援します。定期的な振り返りも実施します。",
+      "プランに基づき、ツールの導入設定から社内展開、運用定着まで伴走型でサポートします。週次または月次の定期ミーティングで進捗を確認し、必要に応じてプランを柔軟に調整しながら進めます。",
   },
+] as const;
+
+export const COMPANY_INFO = [
+  { label: "会社名", value: "株式会社Yanacode（ヤナコード）" },
+  { label: "代表者", value: "桺本 頌大（やなぎもと しょうだい）" },
+  { label: "所在地", value: "〒600-8xxx 京都府京都市下京区xxx町xxx番地" },
+  { label: "電話番号", value: "075-xxx-xxxx" },
+  { label: "事業内容", value: "AI・DXコンサルティング / AIコミュニティ運営 / セミナー・研修事業" },
 ] as const;
 
 export const FAQ_ITEMS = [
@@ -141,7 +149,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     description:
       "中小企業に特化したAI導入・DX推進のコンサルティング。現場の課題を理解し、実行可能な変革プランを一緒に設計します。",
     image:
-      "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1600&q=80",
+      "https://images.unsplash.com/photo-1717501217835-821cc3aefbc3?w=1600&q=80",
     heroDescription:
       "現場の課題を深く理解し、AIとDXを活用した実行可能な変革プランを一緒に設計。導入から定着まで伴走支援します。",
     challenges: {
@@ -204,7 +212,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     description:
       "AI活用に関心のあるビジネスパーソンが集まるコミュニティ。最新情報の共有や実践的なナレッジ交換の場を提供します。",
     image:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80",
+      "https://images.unsplash.com/photo-1717501217780-03809da32358?w=1600&q=80",
     heroDescription:
       "AI活用に関心のあるビジネスパーソンが集い、最新情報の共有や実践的なナレッジ交換ができるコミュニティを運営しています。",
     challenges: {
@@ -268,7 +276,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     description:
       "AIインフルエンサーとしての知見を活かした実践的なセミナー。基礎から応用まで、すぐに使える知識をお届けします。",
     image:
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80",
+      "https://images.unsplash.com/photo-1717501217710-775828219832?w=1600&q=80",
     heroDescription:
       "AIインフルエンサーとしての経験と知見を活かし、基礎から応用まですぐに使える実践的な知識をセミナー形式でお届けします。",
     challenges: {

@@ -1,5 +1,5 @@
 export const COMPANY = {
-  name: "株式会社Yanacode",
+  name: "株式会社しくみスタジオ",
   nameEn: "Shikumi Studio Inc.",
   description:
     "AIとDXの力で、中小企業の「しくみ」をデザインする。コンサルティング・コミュニティ・セミナーを通じて、ビジネスの変革を支援します。",
@@ -87,7 +87,7 @@ export const SERVICE_FLOW = [
 ] as const;
 
 export const COMPANY_INFO = [
-  { label: "会社名", value: "株式会社Yanacode（ヤナコード）" },
+  { label: "会社名", value: "株式会社しくみスタジオ" },
   { label: "代表者", value: "桺本 頌大（やなぎもと しょうだい）" },
   { label: "所在地", value: "〒600-8xxx 京都府京都市下京区xxx町xxx番地" },
   { label: "電話番号", value: "075-xxx-xxxx" },

@@ -31,7 +31,7 @@ export const SERVICES = [
     description:
       "中小企業に特化したAI導入・DX推進のコンサルティング。現場の課題を理解し、実行可能な変革プランを一緒に設計します。",
     image:
-      "https://images.unsplash.com/photo-1717501217835-821cc3aefbc3?w=800&q=80",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
     benefit: "AI・DX導入後の定着率が上がり、現場が自走できるようになります",
   },
   {
@@ -40,7 +40,7 @@ export const SERVICES = [
     description:
       "AI活用に関心のあるビジネスパーソンが集まるコミュニティ。最新情報の共有や実践的なナレッジ交換の場を提供します。",
     image:
-      "https://images.unsplash.com/photo-1717501217780-03809da32358?w=800&q=80",
+      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80",
     benefit: "AIの最新情報を継続的にキャッチアップでき、社内展開のヒントが得られます",
   },
   {
@@ -49,7 +49,7 @@ export const SERVICES = [
     description:
       "AIインフルエンサーとしての知見を活かした実践的なセミナー。基礎から応用まで、すぐに使える知識をお届けします。",
     image:
-      "https://images.unsplash.com/photo-1717501217710-775828219832?w=800&q=80",
+      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
     benefit: "その日から使えるAIスキルが身につき、業務効率化の第一歩を踏み出せます",
   },
 ] as const;
@@ -67,10 +67,16 @@ export const FOUNDER = {
   title: "代表取締役",
   greeting: "テクノロジーの力で、御社の仕組みを変えさせてください。",
   image: "/images/profile.jpg",
+  careers: [
+    "Lark 勤務",
+    "Canva 勤務",
+    "Notion Ambassador",
+    "京都大学MBA",
+    "創業134年企業 7代目後継者",
+  ],
   story: [
-    "LarkやCanvaといった、テクノロジーの最前線を走り続ける企業での実務経験があります。Larkについては、ByteDance（バイトダンス）との契約を通じて副業として従事し、Canvaにおいても同様に副業でプロダクトに深く関わってきました。また、Notion Ambassadorとしても活動しており、先端ツールの活用知見を日々発信しています。",
-    "一方で、創業134年の老舗企業・㈱アナテック・ヤナコの7代目後継者として、中小企業の経営にも携わっています。テクノロジーの最前線と、中小企業の現場——この二つを行き来するなかで気づいたのは、情報や技術の格差ではなく、「橋渡しをする人」がいないだけだということでした。",
-    "最先端を走り続けた現場の経験と、経営者としての視点。この両方を持つからこそ、中小企業の「仕組みづくり」に寄り添えると信じています。テクノロジーと現場を繋ぎ、みなさんの力が最大限に発揮される仕組みを一緒にデザインしたい——それが、しくみスタジオを立ち上げた理由です。",
+    "Lark・Canvaといった世界最先端のテクノロジー企業での実務、Notion Ambassadorとしての活動、京都大学MBAで培った経営知識——テクノロジーの最前線を走りながら、その知見を発信し続けています。",
+    "同時に、創業134年の老舗企業・㈱アナテック・ヤナコの7代目後継者として、中小企業の現場も深く知っています。「橋渡し役」として、テクノロジーと現場を繋ぎ、御社に合った仕組みをデザインします。",
   ],
   social: {
     x: "https://x.com/shodaiiiiii",
@@ -138,12 +144,17 @@ export const FAQ_ITEMS = [
   {
     question: "AI導入の経験がなくても大丈夫ですか？",
     answer:
-      "はい、まったく問題ありません。AIの基礎知識から丁寧にご説明し、御社の状況に合わせた段階的な導入をサポートします。",
+      "はい、まったく問題ありません。AIの基礎知識から丁寧にご説明し、御社の状況に合わせた段階的な導入をサポートします。「何から始めればいいかわからない」という段階からご一緒します。",
+  },
+  {
+    question: "費用はどのくらいかかりますか？",
+    answer:
+      "サービスの内容や規模によって異なります。まずは無料相談でお気軽に現状をお聞かせください。御社に合ったプランとともに費用感をご提示いたします。",
   },
   {
     question: "コンサルティングの期間はどのくらいですか？",
     answer:
-      "課題の規模により異なりますが、まずは3ヶ月の短期プランから始められます。必要に応じて継続的な支援も可能です。",
+      "課題の規模により異なりますが、まずは3ヶ月の短期プランから始められます。必要に応じて継続的な伴走支援も可能です。",
   },
   {
     question: "どのような業種に対応していますか？",
@@ -158,7 +169,7 @@ export const FAQ_ITEMS = [
   {
     question: "コミュニティにはどうやって参加できますか？",
     answer:
-      "お問い合わせフォームからご連絡いただくか、各種SNSからDMをお送りください。参加方法の詳細をご案内します。",
+      "お問い合わせフォームからご連絡いただくか、X（Twitter）のDMをお送りください。参加方法の詳細をご案内します。",
   },
 ] as const;
 
@@ -189,7 +200,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     description:
       "中小企業に特化したAI導入・DX推進のコンサルティング。現場の課題を理解し、実行可能な変革プランを一緒に設計します。",
     image:
-      "https://images.unsplash.com/photo-1717501217835-821cc3aefbc3?w=1600&q=80",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
     heroDescription:
       "現場の課題を深く理解し、AIとDXを活用した実行可能な変革プランを一緒に設計。導入から定着まで伴走支援します。",
     challenges: {
@@ -252,7 +263,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     description:
       "AI活用に関心のあるビジネスパーソンが集まるコミュニティ。最新情報の共有や実践的なナレッジ交換の場を提供します。",
     image:
-      "https://images.unsplash.com/photo-1717501217780-03809da32358?w=1600&q=80",
+      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=80",
     heroDescription:
       "AI活用に関心のあるビジネスパーソンが集い、最新情報の共有や実践的なナレッジ交換ができるコミュニティを運営しています。",
     challenges: {
@@ -316,7 +327,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     description:
       "AIインフルエンサーとしての知見を活かした実践的なセミナー。基礎から応用まで、すぐに使える知識をお届けします。",
     image:
-      "https://images.unsplash.com/photo-1717501217710-775828219832?w=1600&q=80",
+      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80",
     heroDescription:
       "AIインフルエンサーとしての経験と知見を活かし、基礎から応用まですぐに使える実践的な知識をセミナー形式でお届けします。",
     challenges: {

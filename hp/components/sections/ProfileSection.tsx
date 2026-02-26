@@ -44,7 +44,19 @@ export default function ProfileSection() {
                 {FOUNDER.greeting}
               </h3>
 
-              <div className="mt-6 space-y-5">
+              {/* Career Badges */}
+              <div className="mt-5 flex flex-wrap gap-2">
+                {FOUNDER.careers.map((career) => (
+                  <span
+                    key={career}
+                    className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-text-muted"
+                  >
+                    {career}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-5 space-y-4">
                 {FOUNDER.story.map((paragraph, i) => (
                   <p key={i} className="leading-[1.9] text-text-muted">
                     {paragraph}

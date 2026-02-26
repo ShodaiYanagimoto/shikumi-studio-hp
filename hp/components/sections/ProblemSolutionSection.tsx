@@ -53,14 +53,14 @@ export default function ProblemSolutionSection() {
         </FadeIn>
 
         {/* Arrow */}
-        <div className="flex justify-center py-6 text-blue-500">
+        <div className="flex justify-center py-6 text-green-500">
           <span className="text-3xl leading-none">↓</span>
         </div>
 
         {/* Benefit */}
         <FadeIn delay={600}>
-          <div className="rounded-2xl border border-border bg-white p-10 text-center">
-            <p className="text-sm font-medium uppercase tracking-widest text-text-light">
+          <div className="rounded-2xl border border-green-100 bg-green-50 p-10 text-center">
+            <p className="text-sm font-medium uppercase tracking-widest text-green-600">
               Benefit
             </p>
             <p className="mt-4 text-xl font-bold leading-relaxed text-text sm:text-2xl">

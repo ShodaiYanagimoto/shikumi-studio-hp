@@ -64,14 +64,8 @@ export const NAV_ITEMS = [
 export const FOUNDER = {
   name: "桺本 頌大",
   nameReading: "やなぎもと しょうだい",
+  title: "代表",
   image: "/images/profile.jpg",
-  careers: [
-    "㈱アナテック・ヤナコ 7代目アトツギ・取締役",
-    "Lark 勤務",
-    "Canva 勤務",
-    "Notion Ambassador",
-    "京都大学MBA",
-  ],
   story: [
     "老舗企業を継ぎながら、LarkやCanvaといったテクノロジーの最前線に立つ会社でも働く。一見すると不思議な組み合わせですが、この二つの世界を行き来することで、私はある現実を目の当たりにしました。",
     "多くの中小企業が、素晴らしい技術・商品・人材を持ちながら、「仕組みがない」という一点だけで、その力を十分に発揮できていない。業務は属人化し、AIやDXは「大企業のもの」として諦められている。",

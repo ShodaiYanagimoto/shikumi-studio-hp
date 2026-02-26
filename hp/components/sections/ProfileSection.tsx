@@ -13,7 +13,7 @@ export default function ProfileSection() {
 
         <div className="mt-12 flex flex-col gap-12 md:flex-row md:items-start md:gap-16">
           {/* 左: 写真 + 名前・肩書き + 経歴バッジ */}
-          <FadeIn delay={200} className="shrink-0">
+          <FadeIn delay={200} className="w-[280px] shrink-0">
             <div>
               <Image
                 src={FOUNDER.image}

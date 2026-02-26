@@ -77,6 +77,23 @@ export const FOUNDER = {
   },
 } as const;
 
+export const PROBLEM_SOLUTION = {
+  customer: "業務効率化・AI活用を進めたいが、うまく進まない中小企業の経営者",
+  problems: [
+    {
+      id: "problem01",
+      title: "業務が属人化し、\n生産性が上がらない",
+    },
+    {
+      id: "problem02",
+      title: "AIやDXは「大企業のもの」と感じ、\n一歩が踏み出せない",
+    },
+  ],
+  solution:
+    "テクノロジーと現場の両方を知る「橋渡し役」が、御社専用の仕組みをデザインします",
+  benefit: "業務が自走し、チームの力が最大限に発揮される",
+} as const;
+
 export const SERVICE_FLOW = [
   {
     step: 1,

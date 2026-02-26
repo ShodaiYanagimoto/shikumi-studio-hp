@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 株式会社しくみスタジオ
 
-## Getting Started
+AIとDXの力で、中小企業の「しくみ」をデザインする。
 
-First, run the development server:
+## ディレクトリ構成
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+| フォルダ | 内容 |
+|----------|------|
+| `01_company/` | 会社概要、ビジョン・ミッション、ブランド素材 |
+| `02_registration/` | 登記・設立手続き、定款、役員情報 |
+| `03_business/` | サービス内容、事業計画、料金体系 |
+| `04_finance/` | 予算管理、請求書、レポート |
+| `05_legal/` | 契約書、ひな型 |
+| `06_operations/` | 銀行口座、税務、保険、利用ツール |
+| `hp/` | コーポレートサイト（Next.js） |
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## コーポレートサイト
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- URL: https://shikumi-studio.vercel.app
+- ソース: `hp/`
+- デプロイ: Vercel（GitHub連携）

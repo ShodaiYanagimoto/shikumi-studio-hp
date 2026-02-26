@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "定款プレビュー",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "02_registration", "-p", "3333", "--no-clipboard"],
+      "port": 3333
+    },
+    {
+      "name": "HP開発サーバー",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "hp"],
+      "port": 3000
+    }
+  ]
+}

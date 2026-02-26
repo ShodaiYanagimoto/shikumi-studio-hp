@@ -12,7 +12,7 @@ export default function ProfileSection() {
         </FadeIn>
 
         <div className="mt-12 flex flex-col gap-12 md:flex-row md:items-start md:gap-16">
-          {/* 左: 写真 + 名前・肩書き */}
+          {/* 左: 写真 + 名前・肩書き + 経歴バッジ */}
           <FadeIn delay={200} className="shrink-0">
             <div>
               <Image
@@ -34,6 +34,17 @@ export default function ProfileSection() {
                   {FOUNDER.nameReading}
                 </p>
               </div>
+              {/* Career Badges */}
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {FOUNDER.careers.map((career) => (
+                  <span
+                    key={career}
+                    className="rounded-full bg-gray-100 px-2.5 py-1 text-xs font-medium text-text-muted"
+                  >
+                    {career}
+                  </span>
+                ))}
+              </div>
             </div>
           </FadeIn>
 
@@ -44,19 +55,7 @@ export default function ProfileSection() {
                 {FOUNDER.greeting}
               </h3>
 
-              {/* Career Badges */}
-              <div className="mt-5 flex flex-wrap gap-2">
-                {FOUNDER.careers.map((career) => (
-                  <span
-                    key={career}
-                    className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-text-muted"
-                  >
-                    {career}
-                  </span>
-                ))}
-              </div>
-
-              <div className="mt-5 space-y-4">
+              <div className="mt-6 space-y-4">
                 {FOUNDER.story.map((paragraph, i) => (
                   <p key={i} className="leading-[1.9] text-text-muted">
                     {paragraph}

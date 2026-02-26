@@ -67,7 +67,7 @@ export default function ContactSection() {
           </p>
         </FadeIn>
 
-        <FadeIn delay={200}>
+        <FadeIn delay={200} className="mt-8">
           <form
             onSubmit={handleSubmit}
             className="space-y-6 rounded-2xl border border-border bg-white p-8 md:p-10"

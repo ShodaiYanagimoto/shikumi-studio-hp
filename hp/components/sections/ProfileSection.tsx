@@ -12,39 +12,8 @@ export default function ProfileSection() {
         </FadeIn>
 
         <div className="mt-12 flex flex-col gap-12 md:flex-row md:items-start md:gap-16">
-          {/* 左: 創業への想い + SNS */}
-          <FadeIn delay={200} className="flex-1">
-            <div>
-              <div className="space-y-5">
-                {FOUNDER.story.map((paragraph, i) => (
-                  <p key={i} className="leading-[1.9] text-text-muted">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-
-              <div className="mt-8 flex flex-wrap gap-3">
-                {[
-                  { label: "X (Twitter)", href: FOUNDER.social.x },
-                  { label: "note", href: FOUNDER.social.note },
-                  { label: "Facebook", href: FOUNDER.social.facebook },
-                ].map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-outline rounded-full px-5 py-2 text-sm font-medium"
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </FadeIn>
-
-          {/* 右: 写真 + 名前・肩書き */}
-          <FadeIn delay={400} className="shrink-0">
+          {/* 左: 写真 + 名前・肩書き */}
+          <FadeIn delay={200} className="shrink-0">
             <div>
               <Image
                 src={FOUNDER.image}
@@ -54,7 +23,7 @@ export default function ProfileSection() {
                 className="rounded-2xl object-cover"
                 priority
               />
-              <div className="mt-4 text-right">
+              <div className="mt-4">
                 <p className="text-xs font-medium text-text-light">
                   {FOUNDER.title}
                 </p>
@@ -64,6 +33,34 @@ export default function ProfileSection() {
                 <p className="mt-0.5 text-sm text-text-muted">
                   {FOUNDER.nameReading}
                 </p>
+              </div>
+            </div>
+          </FadeIn>
+
+          {/* 右: 挨拶 + ストーリー + SNS */}
+          <FadeIn delay={400} className="flex-1">
+            <div>
+              <h3 className="text-2xl font-bold leading-snug text-text md:text-3xl">
+                {FOUNDER.greeting}
+              </h3>
+
+              <div className="mt-6 space-y-5">
+                {FOUNDER.story.map((paragraph, i) => (
+                  <p key={i} className="leading-[1.9] text-text-muted">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+
+              <div className="mt-8">
+                <a
+                  href={FOUNDER.social.x}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline rounded-full px-5 py-2 text-sm font-medium"
+                >
+                  X (Twitter)
+                </a>
               </div>
             </div>
           </FadeIn>

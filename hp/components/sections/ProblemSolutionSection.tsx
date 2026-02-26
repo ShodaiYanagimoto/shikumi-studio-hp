@@ -12,20 +12,20 @@ export default function ProblemSolutionSection() {
 
         {/* Customer + Problems */}
         <FadeIn delay={200}>
-          <div className="mt-12 rounded-2xl border border-border bg-white p-8">
-            <p className="text-center text-xs font-medium uppercase tracking-widest text-text-light">
+          <div className="mt-12 rounded-2xl border border-border bg-white p-10">
+            <p className="text-center text-sm font-medium uppercase tracking-widest text-text-light">
               Customer
             </p>
-            <p className="mt-3 text-center text-base font-bold text-text sm:text-lg">
+            <p className="mt-4 text-center text-xl font-bold text-text sm:text-2xl">
               {PROBLEM_SOLUTION.customer}
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
               {PROBLEM_SOLUTION.problems.map((problem, i) => (
-                <div key={problem.id} className="rounded-xl bg-gray-50 p-5">
-                  <p className="text-xs font-medium text-text-light">
+                <div key={problem.id} className="rounded-xl bg-gray-50 p-6">
+                  <p className="text-sm font-medium text-text-light">
                     Problem {String(i + 1).padStart(2, "0")}
                   </p>
-                  <p className="mt-2 whitespace-pre-line text-sm font-medium leading-snug text-text">
+                  <p className="mt-3 whitespace-pre-line text-base font-bold leading-snug text-text sm:text-lg">
                     {problem.title}
                   </p>
                 </div>
@@ -35,34 +35,34 @@ export default function ProblemSolutionSection() {
         </FadeIn>
 
         {/* Arrow */}
-        <div className="flex justify-center py-5 text-blue-500">
-          <span className="text-2xl leading-none">↓</span>
+        <div className="flex justify-center py-6 text-blue-500">
+          <span className="text-3xl leading-none">↓</span>
         </div>
 
         {/* Solution */}
         <FadeIn delay={400}>
-          <div className="rounded-2xl border border-border bg-white p-8 text-center">
-            <p className="text-xs font-medium uppercase tracking-widest text-text-light">
+          <div className="rounded-2xl border border-border bg-white p-10 text-center">
+            <p className="text-sm font-medium uppercase tracking-widest text-text-light">
               Solution
             </p>
-            <p className="mt-3 text-base font-bold leading-relaxed text-text sm:text-lg">
+            <p className="mt-4 text-xl font-bold leading-relaxed text-text sm:text-2xl">
               {PROBLEM_SOLUTION.solution}
             </p>
           </div>
         </FadeIn>
 
         {/* Arrow */}
-        <div className="flex justify-center py-5 text-blue-500">
-          <span className="text-2xl leading-none">↓</span>
+        <div className="flex justify-center py-6 text-blue-500">
+          <span className="text-3xl leading-none">↓</span>
         </div>
 
         {/* Benefit */}
         <FadeIn delay={600}>
-          <div className="rounded-2xl border border-border bg-white p-8 text-center">
-            <p className="text-xs font-medium uppercase tracking-widest text-text-light">
+          <div className="rounded-2xl border border-border bg-white p-10 text-center">
+            <p className="text-sm font-medium uppercase tracking-widest text-text-light">
               Benefit
             </p>
-            <p className="mt-3 text-base font-bold leading-relaxed text-text sm:text-lg">
+            <p className="mt-4 text-xl font-bold leading-relaxed text-text sm:text-2xl">
               {PROBLEM_SOLUTION.benefit}
             </p>
           </div>

@@ -124,8 +124,7 @@ export const SERVICE_FLOW = [
 export const COMPANY_INFO = [
   { label: "会社名", value: "株式会社しくみスタジオ" },
   { label: "代表者", value: "桺本 頌大（やなぎもと しょうだい）" },
-  { label: "所在地", value: "〒600-8xxx 京都府京都市下京区xxx町xxx番地" },
-  { label: "電話番号", value: "075-xxx-xxxx" },
+  { label: "所在地", value: "〒612-8387 京都市伏見区下鳥羽平塚町145番地" },
   { label: "事業内容", value: "AI・DXコンサルティング / AIコミュニティ運営 / セミナー・研修事業" },
 ] as const;
 

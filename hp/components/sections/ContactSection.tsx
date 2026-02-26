@@ -61,7 +61,10 @@ export default function ContactSection() {
     <section id="contact" className="bg-bg-alt py-20 px-6">
       <div className="mx-auto max-w-2xl">
         <FadeIn>
-          <SectionTitle title="Contact" subtitle="お問い合わせ" />
+          <SectionTitle title="Contact" subtitle="まずは無料で相談してみる" />
+          <p className="mt-4 text-center text-text-muted">
+            Zoomで30分、お気軽にどうぞ。2営業日以内にご返信します。
+          </p>
         </FadeIn>
 
         <FadeIn delay={200}>
@@ -137,7 +140,7 @@ export default function ContactSection() {
               disabled={submitting}
               className="btn-primary w-full rounded-full py-4 text-base font-medium"
             >
-              {submitting ? "送信中..." : "送信する"}
+              {submitting ? "送信中..." : "相談を申し込む"}
             </button>
           </form>
         </FadeIn>

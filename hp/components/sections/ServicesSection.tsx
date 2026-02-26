@@ -30,6 +30,10 @@ export default function ServicesSection() {
                 <p className="mt-3 leading-relaxed text-text-muted">
                   {service.description}
                 </p>
+                <p className="mt-4 flex items-start gap-2 text-sm text-text">
+                  <span className="mt-0.5 shrink-0 text-base leading-none">✓</span>
+                  {service.benefit}
+                </p>
                 <Link
                   href={`/services/${service.id}`}
                   className="btn-primary mt-6 inline-block rounded-full px-6 py-2.5 text-sm font-medium"

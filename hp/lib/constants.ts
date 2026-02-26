@@ -32,6 +32,7 @@ export const SERVICES = [
       "中小企業に特化したAI導入・DX推進のコンサルティング。現場の課題を理解し、実行可能な変革プランを一緒に設計します。",
     image:
       "https://images.unsplash.com/photo-1717501217835-821cc3aefbc3?w=800&q=80",
+    benefit: "AI・DX導入後の定着率が上がり、現場が自走できるようになります",
   },
   {
     id: "community",
@@ -40,6 +41,7 @@ export const SERVICES = [
       "AI活用に関心のあるビジネスパーソンが集まるコミュニティ。最新情報の共有や実践的なナレッジ交換の場を提供します。",
     image:
       "https://images.unsplash.com/photo-1717501217780-03809da32358?w=800&q=80",
+    benefit: "AIの最新情報を継続的にキャッチアップでき、社内展開のヒントが得られます",
   },
   {
     id: "seminar",
@@ -48,16 +50,39 @@ export const SERVICES = [
       "AIインフルエンサーとしての知見を活かした実践的なセミナー。基礎から応用まで、すぐに使える知識をお届けします。",
     image:
       "https://images.unsplash.com/photo-1717501217710-775828219832?w=800&q=80",
+    benefit: "その日から使えるAIスキルが身につき、業務効率化の第一歩を踏み出せます",
   },
 ] as const;
 
 export const NAV_ITEMS = [
-  { label: "私たちについて", href: "/#about" },
+  { label: "代表者について", href: "/#about" },
   { label: "事業内容", href: "/#services" },
-  { label: "会社概要", href: "/#company" },
   { label: "よくある質問", href: "/#faq" },
   { label: "お問い合わせ", href: "/#contact" },
 ] as const;
+
+export const FOUNDER = {
+  name: "桺本 頌大",
+  nameReading: "やなぎもと しょうだい",
+  image: "/images/profile.jpg",
+  careers: [
+    "㈱アナテック・ヤナコ 7代目アトツギ・取締役",
+    "Lark 勤務",
+    "Canva 勤務",
+    "Notion Ambassador",
+    "京都大学MBA",
+  ],
+  story: [
+    "老舗企業を継ぎながら、LarkやCanvaといったテクノロジーの最前線に立つ会社でも働く。一見すると不思議な組み合わせですが、この二つの世界を行き来することで、私はある現実を目の当たりにしました。",
+    "多くの中小企業が、素晴らしい技術・商品・人材を持ちながら、「仕組みがない」という一点だけで、その力を十分に発揮できていない。業務は属人化し、AIやDXは「大企業のもの」として諦められている。",
+    "それは、情報や機会の格差ではなく、「橋渡しをする人」がいないだけだと気づきました。テクノロジーと現場を両方知る立場から、中小企業のみなさんの「仕組み」を一緒にデザインしたい。それが、しくみスタジオを立ち上げた理由です。",
+  ],
+  social: {
+    x: "https://x.com/shodaiiiiii",
+    note: "https://note.com/shodaiiiiii",
+    facebook: "https://www.facebook.com/shodai.yanagimoto",
+  },
+} as const;
 
 export const SERVICE_FLOW = [
   {

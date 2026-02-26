@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { COMPANY } from "@/lib/constants";
 
 export default function HeroSection() {
   return (
@@ -7,33 +6,24 @@ export default function HeroSection() {
       <div className="mx-auto max-w-5xl">
         {/* Headline */}
         <div className="text-center">
-          {/* PC用: 3行構成、大きめで行間ゆったり */}
+          {/* PC用 */}
           <h1 className="hidden sm:block text-5xl font-bold leading-[1.3] tracking-tight text-text md:text-7xl lg:text-8xl">
-            AIとDXの力で、
+            その悩み、
             <br />
-            ビジネスの
-            <span className="text-gradient font-extrabold">「しくみ」</span>
-            <br />
-            を<span className="text-gradient font-extrabold">デザイン</span>する。
+            <span className="text-gradient font-extrabold">仕組みで断ち切る。</span>
           </h1>
 
-          {/* スマホ用: 画面幅いっぱいの大きなテキスト */}
-          <h1 className="sm:hidden text-[14vw] font-bold leading-[1.2] tracking-tight text-text">
-            AIとDX
+          {/* スマホ用 */}
+          <h1 className="sm:hidden text-[13vw] font-bold leading-[1.2] tracking-tight text-text">
+            その悩み、
             <br />
-            の力で、
+            <span className="text-gradient font-extrabold">仕組みで</span>
             <br />
-            ビジネスの
-            <br />
-            <span className="text-gradient font-extrabold">「しくみ」</span>
-            <br />
-            を<span className="text-gradient font-extrabold">デザイン</span>
-            <br />
-            する。
+            <span className="text-gradient font-extrabold">断ち切る。</span>
           </h1>
 
           <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-text-muted sm:mt-10 sm:text-lg md:text-xl">
-            {COMPANY.description}
+            属人化・生産性の低下・人材育成の悩み…私たちは「仕組みの力」で中小企業の成長を加速させます。
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4 sm:mt-12 sm:flex-row sm:justify-center">
@@ -41,7 +31,7 @@ export default function HeroSection() {
               href="#contact"
               className="btn-primary inline-block rounded-full px-10 py-4 text-base font-medium"
             >
-              お問い合わせ
+              まずは無料で相談してみる
             </a>
             <a
               href="#services"

@@ -10,23 +10,24 @@ export default function ProblemSolutionSection() {
           <SectionTitle title="Our Value" subtitle="しくみスタジオの提供価値" />
         </FadeIn>
 
-        {/* Customer + Problems */}
+        {/* お悩み */}
         <FadeIn delay={200}>
-          <div className="mt-12 rounded-2xl border border-border bg-white p-10">
-            <p className="text-center text-sm font-medium uppercase tracking-widest text-text-light">
-              Customer
+          <div className="mt-12">
+            <p className="text-center text-xl font-bold text-text sm:text-2xl">
+              {PROBLEM_SOLUTION.heading}
             </p>
-            <p className="mt-4 text-center text-xl font-bold text-text sm:text-2xl">
-              {PROBLEM_SOLUTION.customer}
-            </p>
-            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {PROBLEM_SOLUTION.problems.map((problem, i) => (
-                <div key={problem.id} className="rounded-xl bg-gray-50 p-6">
-                  <p className="text-sm font-medium text-text-light">
-                    Problem {String(i + 1).padStart(2, "0")}
-                  </p>
-                  <p className="mt-3 whitespace-pre-line text-base font-bold leading-snug text-text sm:text-lg">
+            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+              {PROBLEM_SOLUTION.problems.map((problem) => (
+                <div
+                  key={problem.id}
+                  className="rounded-2xl border border-border bg-white p-7"
+                >
+                  <div className="text-4xl">{problem.emoji}</div>
+                  <p className="mt-4 whitespace-pre-line text-lg font-bold leading-snug text-text">
                     {problem.title}
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed text-text-muted">
+                    {problem.description}
                   </p>
                 </div>
               ))}
@@ -41,8 +42,8 @@ export default function ProblemSolutionSection() {
 
         {/* Solution */}
         <FadeIn delay={400}>
-          <div className="rounded-2xl border border-border bg-white p-10 text-center">
-            <p className="text-sm font-medium uppercase tracking-widest text-text-light">
+          <div className="rounded-2xl border border-blue-100 bg-blue-50 p-10 text-center">
+            <p className="text-sm font-medium uppercase tracking-widest text-blue-400">
               Solution
             </p>
             <p className="mt-4 text-xl font-bold leading-relaxed text-text sm:text-2xl">

@@ -78,15 +78,21 @@ export const FOUNDER = {
 } as const;
 
 export const PROBLEM_SOLUTION = {
-  customer: "業務効率化・AI活用を進めたいが、うまく進まない中小企業の経営者",
+  heading: "こんなお悩み、ありませんか？",
   problems: [
     {
       id: "problem01",
-      title: "業務が属人化し、\n生産性が上がらない",
+      emoji: "😰",
+      title: "「この仕事、○○さんしかできない」\nが積み重なっている",
+      description:
+        "業務が特定の人に集中して、チームとして前に進めない状態が続いている",
     },
     {
       id: "problem02",
-      title: "AIやDXは「大企業のもの」と感じ、\n一歩が踏み出せない",
+      emoji: "🤔",
+      title: "AIやDXは気になるけど、\nうちには難しそう…と後回しにしている",
+      description:
+        "情報はあふれているのに、自社に合った進め方がわからず、手が止まったまま",
     },
   ],
   solution:

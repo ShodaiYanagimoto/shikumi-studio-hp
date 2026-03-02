@@ -26,7 +26,7 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="/" className="flex items-center text-text">
-          <Image src="/images/logo.svg" alt="しくみスタジオ" width={230} height={40} unoptimized />
+          <Image src="/images/logo.svg" alt="しくみスタジオ" width={230} height={40} unoptimized className="h-5 w-auto md:h-10" />
         </a>
 
         {/* Desktop nav */}

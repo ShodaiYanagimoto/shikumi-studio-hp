@@ -1,6 +1,7 @@
 import { PROBLEM_SOLUTION } from "@/lib/constants";
 import SectionTitle from "@/components/ui/SectionTitle";
 import FadeIn from "@/components/ui/FadeIn";
+import Twemoji from "@/components/ui/Twemoji";
 
 export default function ProblemSolutionSection() {
   return (
@@ -22,7 +23,7 @@ export default function ProblemSolutionSection() {
                   key={problem.id}
                   className="rounded-2xl border border-border bg-white p-7"
                 >
-                  <div className="text-4xl">{problem.emoji}</div>
+                  <Twemoji emoji={problem.emoji} size={40} />
                   <p className="mt-4 whitespace-pre-line text-lg font-bold leading-snug text-text">
                     {problem.title}
                   </p>

@@ -24,7 +24,7 @@ export default function AboutSection() {
 
           <FadeIn delay={600}>
             <p className="text-lg leading-[1.8] text-text-muted">
-              私たちは、コンサルティング・コミュニティ・セミナーの3つの軸で、中小企業のAI・DX活用を伴走支援します。
+              私たちは、コンサルティング・顧問・講演の3つの軸で、中小企業のAI・DX活用を伴走支援します。
             </p>
           </FadeIn>
         </div>

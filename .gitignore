@@ -6,3 +6,5 @@ Thumbs.db
 hp/node_modules/
 hp/.next/
 hp/.vercel
+
+.vercel

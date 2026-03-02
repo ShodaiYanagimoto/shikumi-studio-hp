@@ -10,7 +10,7 @@ export default function SectionTitle({ title, subtitle }: SectionTitleProps) {
         {title}
       </p>
       {subtitle && (
-        <h2 className="text-4xl font-bold text-text md:text-5xl">
+        <h2 className="text-4xl font-bold font-heading tracking-normal text-text md:text-5xl">
           {subtitle}
         </h2>
       )}

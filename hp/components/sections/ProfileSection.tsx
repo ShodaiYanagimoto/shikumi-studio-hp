@@ -12,7 +12,7 @@ export default function ProfileSection() {
         </FadeIn>
 
         <div className="mt-12 flex flex-col gap-12 md:flex-row md:items-start md:gap-16">
-          {/* 左: 写真 + 名前・肩書き + 経歴バッジ */}
+          {/* 左: 写真 + 名前・肩書き */}
           <FadeIn delay={200} className="w-[280px] shrink-0">
             <div>
               <Image
@@ -34,36 +34,7 @@ export default function ProfileSection() {
                   {FOUNDER.nameReading}
                 </p>
               </div>
-              {/* Career Badges */}
-              <div className="mt-4 flex flex-wrap gap-1.5">
-                {FOUNDER.careers.map((career) => (
-                  <span
-                    key={career}
-                    className="rounded-full bg-gray-100 px-2.5 py-1 text-xs font-medium text-text-muted"
-                  >
-                    {career}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </FadeIn>
-
-          {/* 右: 挨拶 + ストーリー + SNS */}
-          <FadeIn delay={400} className="flex-1">
-            <div>
-              <h3 className="text-2xl font-bold leading-snug text-text md:text-3xl">
-                {FOUNDER.greeting}
-              </h3>
-
-              <div className="mt-6 space-y-4">
-                {FOUNDER.story.map((paragraph, i) => (
-                  <p key={i} className="leading-[1.9] text-text-muted">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-
-              <div className="mt-8">
+              <div className="mt-4">
                 <a
                   href={FOUNDER.social.x}
                   target="_blank"
@@ -73,6 +44,37 @@ export default function ProfileSection() {
                   X (Twitter)
                 </a>
               </div>
+            </div>
+          </FadeIn>
+
+          {/* 右: 挨拶 + メッセージ + 強み + SNS */}
+          <FadeIn delay={400} className="flex-1">
+            <div>
+              <h3 className="text-2xl font-bold leading-snug text-text md:text-3xl">
+                {FOUNDER.greeting}
+              </h3>
+
+              <div className="mt-6 space-y-4">
+                {FOUNDER.message.map((paragraph, i) => (
+                  <p key={i} className="leading-[1.9] text-text-muted">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+
+              <div className="mt-10 rounded-xl bg-gray-100 p-6 space-y-5">
+                {FOUNDER.strengths.map((strength) => (
+                  <div key={strength.title}>
+                    <h4 className="text-base font-bold text-text">
+                      {strength.title}
+                    </h4>
+                    <p className="mt-1.5 leading-[1.8] text-text-muted text-sm">
+                      {strength.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
             </div>
           </FadeIn>
         </div>

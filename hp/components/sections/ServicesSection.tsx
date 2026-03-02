@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { SERVICES } from "@/lib/constants";
 import SectionTitle from "@/components/ui/SectionTitle";
 import FadeIn from "@/components/ui/FadeIn";
+import Twemoji from "@/components/ui/Twemoji";
 
 export default function ServicesSection() {
   return (
@@ -12,26 +12,21 @@ export default function ServicesSection() {
           <SectionTitle title="Services" subtitle="事業内容" />
         </FadeIn>
 
-        <div className="grid gap-16 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-3">
           {SERVICES.map((service, index) => (
             <FadeIn key={service.id} delay={index * 200}>
-              <div>
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="mt-6 text-xl font-medium text-text">
+              <div className="rounded-2xl border border-border bg-white p-8">
+                <Twemoji emoji={service.emoji} size={48} />
+                <h3 className="mt-5 text-xl font-medium text-text">
                   {service.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-text-muted">
                   {service.description}
                 </p>
                 <p className="mt-4 flex items-start gap-2 text-sm text-text">
-                  <span className="mt-0.5 shrink-0 text-base leading-none">✓</span>
+                  <span className="mt-0.5 shrink-0 text-base leading-none">
+                    ✓
+                  </span>
                   {service.benefit}
                 </p>
                 <Link

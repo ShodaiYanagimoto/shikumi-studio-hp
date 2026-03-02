@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
-import { SERVICE_DETAILS, COMPANY } from "@/lib/constants";
+import { SERVICE_DETAILS, SERVICES, COMPANY } from "@/lib/constants";
 import FadeIn from "@/components/ui/FadeIn";
+import Twemoji from "@/components/ui/Twemoji";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -46,21 +46,17 @@ export default async function ServiceDetailPage({ params }: Props) {
 
           {/* Hero */}
           <FadeIn delay={100}>
-            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl">
-              <Image
-                src={service.image}
-                alt={service.title}
-                fill
-                className="object-cover"
-                priority
+            <div className="flex items-center gap-5">
+              <Twemoji
+                emoji={
+                  SERVICES.find((s) => s.id === id)?.emoji ?? ""
+                }
+                size={56}
               />
+              <h1 className="text-4xl font-light text-text md:text-5xl">
+                {service.title}
+              </h1>
             </div>
-          </FadeIn>
-
-          <FadeIn delay={200}>
-            <h1 className="mt-12 text-4xl font-light text-text md:text-5xl">
-              {service.title}
-            </h1>
             <p className="mt-6 text-lg leading-relaxed text-text-muted">
               {service.heroDescription}
             </p>

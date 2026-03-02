@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Zen_Kaku_Gothic_New } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+});
+
+const zenKaku = Zen_Kaku_Gothic_New({
+  weight: ["500", "700"],
+  subsets: ["latin"],
+  variable: "--font-zen-kaku",
+  display: "swap",
 });
 
 const lineSeedJP = localFont({
@@ -38,11 +45,11 @@ const lineSeedJP = localFont({
 export const metadata: Metadata = {
   title: "しくみスタジオ | AI・DXで中小企業の変革を支援",
   description:
-    "しくみスタジオは、AI・DXコンサルティング、AIコミュニティ運営、セミナー事業を通じて中小企業のビジネス変革を支援します。",
+    "しくみスタジオは、AI・DXコンサルティング、顧問・アドバイザリー、講演・セミナーを通じて中小企業のビジネス変革を支援します。",
   openGraph: {
     title: "しくみスタジオ | AI・DXで中小企業の変革を支援",
     description:
-      "AI・DXコンサルティング、AIコミュニティ運営、セミナー事業を通じて中小企業のビジネス変革を支援します。",
+      "AI・DXコンサルティング、顧問・アドバイザリー、講演・セミナーを通じて中小企業のビジネス変革を支援します。",
     locale: "ja_JP",
     type: "website",
   },
@@ -56,7 +63,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${inter.variable} ${lineSeedJP.variable} font-sans antialiased`}
+        className={`${inter.variable} ${lineSeedJP.variable} ${zenKaku.variable} font-sans antialiased`}
       >
         {children}
       </body>

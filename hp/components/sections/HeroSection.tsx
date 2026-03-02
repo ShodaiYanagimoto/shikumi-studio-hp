@@ -1,60 +1,54 @@
-import Image from "next/image";
+import PhotoMarquee from "@/components/ui/PhotoMarquee";
 
 export default function HeroSection() {
   return (
-    <section className="pt-28 pb-16 px-3 sm:pt-32 sm:pb-20 sm:px-6">
-      <div className="mx-auto max-w-5xl">
-        {/* Headline */}
-        <div className="text-center">
-          {/* PC用 */}
-          <h1 className="hidden sm:block text-5xl font-bold leading-[1.3] tracking-tight text-text md:text-7xl lg:text-8xl">
-            「うちには難しい」を、
+    <section className="pt-40 sm:pt-48">
+      {/* テキスト + ボタン */}
+      <div className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 sm:pb-48">
+        <div className="grid items-center gap-8 md:grid-cols-[1fr_auto] md:gap-12">
+          {/* 左: テキスト */}
+          <h1 className="text-4xl font-bold font-heading leading-[1.1] tracking-normal text-text sm:text-5xl md:text-6xl lg:text-7xl">
+            うちには難しいを
             <br />
-            <span className="text-gradient font-extrabold">仕組みで変える。</span>
+            <span className="font-extrabold">仕組みで変える。</span>
           </h1>
 
-          {/* スマホ用 */}
-          <h1 className="sm:hidden text-[11vw] font-bold leading-[1.2] tracking-tight text-text">
-            「うちには
-            <br />
-            難しい」を、
-            <br />
-            <span className="text-gradient font-extrabold">仕組みで</span>
-            <br />
-            <span className="text-gradient font-extrabold">変える。</span>
-          </h1>
-
-          <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-text-muted sm:mt-10 sm:text-lg md:text-xl">
-            AIやDXは、大企業だけのものじゃない。テクノロジーの最前線と老舗企業の経営、両方を知る私たちが、御社の現実に合った仕組みをつくります。
-          </p>
-
-          <div className="mt-10 flex flex-col items-center gap-4 sm:mt-12 sm:flex-row sm:justify-center">
+          {/* 右: ボタン（PC、縦並び） */}
+          <div className="hidden md:flex flex-col gap-3">
             <a
               href="#contact"
-              className="btn-primary inline-block rounded-full px-10 py-4 text-base font-medium"
+              className="btn-primary inline-block rounded-lg px-26 py-5 text-center text-lg font-medium"
             >
-              まずは無料で相談してみる
+              まずは相談する
             </a>
             <a
               href="#services"
-              className="btn-outline inline-block rounded-full px-10 py-4 text-base font-medium"
+              className="btn-outline inline-block rounded-lg px-26 py-5 text-center text-lg font-medium"
             >
               サービスを見る
             </a>
           </div>
         </div>
 
-        {/* Hero image */}
-        <div className="relative mt-16 aspect-[16/9] w-full overflow-hidden rounded-2xl sm:mt-20">
-          <Image
-            src="https://images.unsplash.com/photo-1665690399857-9de8bbbeb108?w=1600&q=80"
-            alt="コンピュータサーバーとテクノロジーのイメージ"
-            fill
-            className="object-cover"
-            priority
-          />
+        {/* SP: ボタン（テキスト下に縦並び） */}
+        <div className="mt-12 flex flex-col gap-3 md:hidden">
+          <a
+            href="#contact"
+            className="btn-primary inline-block rounded-lg px-12 py-4 text-center text-base font-medium"
+          >
+            まずは相談する
+          </a>
+          <a
+            href="#services"
+            className="btn-outline inline-block rounded-lg px-12 py-4 text-center text-base font-medium"
+          >
+            サービスを見る
+          </a>
         </div>
       </div>
+
+      {/* 写真マーキー */}
+      <PhotoMarquee />
     </section>
   );
 }

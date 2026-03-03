@@ -1,3 +1,10 @@
+export const HERO_TAGS = [
+  "講演・セミナー",
+  "顧問・アドバイザリー",
+  "法人研修",
+  "AI・DXコンサルティング",
+] as const;
+
 export const COMPANY = {
   name: "株式会社しくみスタジオ",
   nameEn: "Shikumi Studio Inc.",

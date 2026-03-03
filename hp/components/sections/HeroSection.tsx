@@ -20,7 +20,7 @@ export default function HeroSection() {
               {HERO_TAGS.map((tag) => (
                 <span
                   key={tag}
-                  className="inline-block rounded-full border border-border px-4 py-1.5 text-center text-[13px] text-text-muted md:text-left"
+                  className="inline-block whitespace-nowrap rounded-full border border-border px-3 py-1.5 text-center text-[11px] text-text-muted sm:text-[13px] md:px-4 md:text-left"
                 >
                   {tag}
                 </span>

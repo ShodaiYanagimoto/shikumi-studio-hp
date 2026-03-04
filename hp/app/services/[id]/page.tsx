@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { SERVICE_DETAILS, SERVICES, COMPANY } from "@/lib/constants";
+import Image from "next/image";
 import FadeIn from "@/components/ui/FadeIn";
-import Twemoji from "@/components/ui/Twemoji";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -47,11 +47,12 @@ export default async function ServiceDetailPage({ params }: Props) {
           {/* Hero */}
           <FadeIn delay={100}>
             <div className="flex items-center gap-5">
-              <Twemoji
-                emoji={
-                  SERVICES.find((s) => s.id === id)?.emoji ?? ""
-                }
-                size={56}
+              <Image
+                src={SERVICES.find((s) => s.id === id)?.image ?? ""}
+                alt={service.title}
+                width={64}
+                height={64}
+                className="h-14 w-14 object-contain"
               />
               <h1 className="text-4xl font-light text-text md:text-5xl">
                 {service.title}

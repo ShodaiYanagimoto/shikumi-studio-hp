@@ -35,6 +35,7 @@ export const SERVICES = [
   {
     id: "speaking",
     emoji: "🎤",
+    image: "/images/seminar.svg",
     title: "講演・セミナー",
     description:
       "経済団体や企業向けに、AI・DXの講演やセミナーを実施。経営者にも現場にも伝わる、実践的な内容をお届けします。",
@@ -44,6 +45,7 @@ export const SERVICES = [
   {
     id: "advisory",
     emoji: "🤝",
+    image: "/images/advisory.svg",
     title: "顧問・アドバイザリー",
     description:
       "AI・DXの「かかりつけ医」として、経営判断や社内推進を継続的にサポート。月次の定期面談を軸に、御社のペースで変革を進めます。",
@@ -53,6 +55,7 @@ export const SERVICES = [
   {
     id: "consulting",
     emoji: "🛠️",
+    image: "/images/AIDXconsulting.svg",
     title: "AI・DXコンサルティング",
     description:
       "ツールを入れる前に、まず仕組みを整える。現状把握から定着・自走化まで、御社の現実に合ったDXを段階的に設計・伴走します。",

@@ -1,6 +1,13 @@
+import Image from "next/image";
 import { APPROACH_DATA } from "@/lib/constants";
 import SectionTitle from "@/components/ui/SectionTitle";
 import FadeIn from "@/components/ui/FadeIn";
+
+const PROBLEM_IMAGES = [
+  { src: "/images/Problem_1.svg", alt: "AI・DXに興味があるが進め方がわからない" },
+  { src: "/images/Problem_2.svg", alt: "業務の属人化が進み、担当者以外が対応できない" },
+  { src: "/images/Problem_3.svg", alt: "改善したいが日々の業務に追われて手が回らない" },
+];
 
 export default function ApproachSection() {
   return (
@@ -20,29 +27,16 @@ export default function ApproachSection() {
             <p className="text-center text-lg font-bold text-text sm:text-xl">
               {APPROACH_DATA.heading}
             </p>
-            <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-3">
-              {APPROACH_DATA.problems.map((problem) => (
-                <div
-                  key={problem.id}
-                  className="rounded-2xl border border-border bg-white p-6"
-                >
-                  <p className="text-base font-bold leading-snug text-text">
-                    {problem.title}
-                  </p>
-                  <ul className="mt-4 space-y-2.5">
-                    {problem.items.map((item, i) => (
-                      <li
-                        key={i}
-                        className="flex items-start gap-2 text-[13px] leading-relaxed text-text-muted"
-                      >
-                        <span className="mt-0.5 shrink-0 text-text-light">
-                          –
-                        </span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+            <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
+              {PROBLEM_IMAGES.map((img, i) => (
+                <Image
+                  key={i}
+                  src={img.src}
+                  alt={img.alt}
+                  width={1500}
+                  height={1300}
+                  className="w-full h-auto"
+                />
               ))}
             </div>
           </div>

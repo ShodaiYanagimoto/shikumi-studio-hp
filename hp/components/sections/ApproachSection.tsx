@@ -19,7 +19,7 @@ export default function ApproachSection() {
             <p className="mb-3 text-sm font-medium tracking-widest uppercase text-text-muted">
               Our Approach
             </p>
-            <h2 className="text-4xl font-bold font-heading tracking-normal text-text md:text-5xl">
+            <h2 className="text-[26px] font-bold font-heading tracking-normal text-text sm:text-4xl md:text-5xl">
               <span className="inline md:hidden">「わからない」から<br />「自走できる」まで</span>
               <span className="hidden md:inline">「わからない」から「自走できる」まで</span>
             </h2>

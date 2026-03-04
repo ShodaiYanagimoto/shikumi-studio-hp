@@ -15,10 +15,15 @@ export default function ApproachSection() {
       <div className="mx-auto max-w-4xl">
         {/* A. セクションタイトル */}
         <FadeIn>
-          <SectionTitle
-            title="Our Approach"
-            subtitle="「わからない」から「自走できる」まで"
-          />
+          <div className="mb-10 text-center">
+            <p className="mb-3 text-sm font-medium tracking-widest uppercase text-text-muted">
+              Our Approach
+            </p>
+            <h2 className="text-4xl font-bold font-heading tracking-normal text-text md:text-5xl">
+              <span className="inline md:hidden">「わからない」から<br />「自走できる」まで</span>
+              <span className="hidden md:inline">「わからない」から「自走できる」まで</span>
+            </h2>
+          </div>
         </FadeIn>
 
         {/* B. 課題共感 */}

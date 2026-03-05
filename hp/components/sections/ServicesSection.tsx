@@ -32,11 +32,11 @@ export default function ServicesSection() {
                     <p className="mt-3 leading-relaxed text-text-muted">
                       {service.description}
                     </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    <div className="mt-4 flex flex-wrap gap-1.5 md:gap-2">
                       {service.tags.map((tag, i) => (
                         <span
                           key={i}
-                          className="rounded-full bg-gray-100 px-5 py-2 text-base text-text-muted"
+                          className="rounded-full bg-gray-100 px-2.5 py-1 text-[11px] text-text-muted md:px-4 md:py-1.5 md:text-sm"
                         >
                           {tag}
                         </span>

@@ -15,7 +15,6 @@ export default function ServicesSection() {
           {SERVICES.map((service, index) => (
             <FadeIn key={service.id} delay={index * 200}>
               <div className="overflow-hidden rounded-2xl border border-border bg-white">
-                {/* ヘッダー: イラスト + タイトル + 概要 */}
                 <div className="flex flex-col md:flex-row">
                   <div className="shrink-0 bg-gray-50 p-6 md:w-64 md:p-8">
                     <Image
@@ -33,47 +32,15 @@ export default function ServicesSection() {
                     <p className="mt-3 leading-relaxed text-text-muted">
                       {service.description}
                     </p>
-                  </div>
-                </div>
-
-                {/* 課題 + メニュー */}
-                <div className="border-t border-border p-6 md:p-8">
-                  <div className="grid gap-8 md:grid-cols-2 md:gap-12">
-                    {/* 解決する課題 */}
-                    <div>
-                      <h4 className="text-sm font-bold uppercase tracking-widest text-text-muted">
-                        解決する課題
-                      </h4>
-                      <ul className="mt-4 space-y-2.5">
-                        {service.challenges.map((item, i) => (
-                          <li
-                            key={i}
-                            className="flex items-start gap-2.5 text-sm leading-relaxed text-text-muted"
-                          >
-                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-text-light" />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    {/* 提供メニュー */}
-                    <div>
-                      <h4 className="text-sm font-bold uppercase tracking-widest text-text-muted">
-                        提供メニュー
-                      </h4>
-                      <div className="mt-4 space-y-4">
-                        {service.menu.map((item, i) => (
-                          <div key={i}>
-                            <p className="text-sm font-medium text-text">
-                              {item.name}
-                            </p>
-                            <p className="mt-0.5 text-sm leading-relaxed text-text-muted">
-                              {item.description}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {service.tags.map((tag, i) => (
+                        <span
+                          key={i}
+                          className="rounded-full bg-gray-100 px-4 py-1.5 text-sm text-text-muted"
+                        >
+                          {tag}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </div>

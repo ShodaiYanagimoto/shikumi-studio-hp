@@ -36,7 +36,7 @@ export default function ServicesSection() {
                       {service.tags.map((tag, i) => (
                         <span
                           key={i}
-                          className="rounded-full bg-gray-100 px-4 py-1.5 text-sm text-text-muted"
+                          className="rounded-full bg-gray-100 px-5 py-2 text-base text-text-muted"
                         >
                           {tag}
                         </span>

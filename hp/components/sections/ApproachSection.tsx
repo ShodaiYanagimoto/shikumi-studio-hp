@@ -47,6 +47,12 @@ export default function ApproachSection() {
           </div>
         </FadeIn>
 
+        <FadeIn delay={400}>
+          <p className="mt-12 text-center text-lg text-text-muted">
+            これらの課題に、しくみスタジオが伴走します。
+          </p>
+        </FadeIn>
+
       </div>
     </section>
   );

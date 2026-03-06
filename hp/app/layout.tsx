@@ -50,8 +50,16 @@ export const metadata: Metadata = {
     title: "しくみスタジオ | AI・DXで中小企業の変革を支援",
     description:
       "AI・DXコンサルティング、顧問・アドバイザリー、講演・セミナーを通じて中小企業のビジネス変革を支援します。",
+    url: "https://shikumi.studio",
+    siteName: "しくみスタジオ",
     locale: "ja_JP",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "しくみスタジオ | AI・DXで中小企業の変革を支援",
+    description:
+      "AI・DXコンサルティング、顧問・アドバイザリー、講演・セミナーを通じて中小企業のビジネス変革を支援します。",
   },
 };
 

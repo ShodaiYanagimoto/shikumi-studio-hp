@@ -38,7 +38,7 @@ export default function ContactSection() {
 
         <FadeIn delay={200} className="mt-8">
           <iframe
-            data-tally-src="https://tally.so/embed/rjlkQR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            data-tally-src="https://tally.so/embed/Ek1L0A?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy"
             width="100%"
             height="400"

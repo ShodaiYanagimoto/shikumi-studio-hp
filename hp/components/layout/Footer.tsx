@@ -22,7 +22,13 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border pt-8 text-center">
-          <p className="text-xs text-text-light">
+          <a
+            href="/privacy"
+            className="text-xs text-text-light underline hover:text-text-muted"
+          >
+            プライバシーポリシー
+          </a>
+          <p className="mt-4 text-xs text-text-light">
             &copy; {new Date().getFullYear()} {COMPANY.name}. All rights
             reserved.
           </p>

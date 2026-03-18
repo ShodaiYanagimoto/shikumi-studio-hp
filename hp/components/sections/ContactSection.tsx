@@ -32,7 +32,7 @@ export default function ContactSection() {
         <FadeIn>
           <SectionTitle title="Contact" subtitle="まずは無料で相談してみる" />
           <p className="mt-4 text-center text-text-muted">
-            Zoomで30分、お気軽にどうぞ。2営業日以内にご返信します。
+            Web面談で30分、お気軽にどうぞ。2営業日以内にご返信します。
           </p>
         </FadeIn>
 

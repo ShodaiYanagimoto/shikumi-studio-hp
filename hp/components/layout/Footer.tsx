@@ -32,18 +32,6 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} {COMPANY.name}. All rights
             reserved.
           </p>
-          <p className="mt-2 text-[10px] text-text-light/50">
-            Emoji by{" "}
-            <a
-              href="https://github.com/jdecked/twemoji"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-            >
-              Twemoji
-            </a>{" "}
-            (CC-BY 4.0)
-          </p>
         </div>
       </div>
     </footer>

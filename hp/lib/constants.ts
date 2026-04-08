@@ -81,6 +81,7 @@ export const SERVICES = [
 export const NAV_ITEMS = [
   { label: "代表者について", href: "/#about" },
   { label: "できること", href: "/#services" },
+  { label: "サービス・料金", href: "/services" },
   { label: "よくある質問", href: "/#faq" },
   { label: "相談する", href: "/#contact" },
 ] as const;

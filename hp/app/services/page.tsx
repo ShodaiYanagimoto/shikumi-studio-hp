@@ -120,7 +120,7 @@ export default function ServicesPage() {
                   <li>最大月4回の面談（60分）</li>
                   <li>オンラインまたは対面</li>
                   <li>経営会議への定期参加</li>
-                  <li>チャット相談（優先対応）</li>
+                  <li>チャット相談</li>
                   <li>トレンド共有</li>
                   <li>環境設計・構築・導入の実作業</li>
                   <li>操作レクチャー・定着支援</li>
@@ -209,7 +209,7 @@ export default function ServicesPage() {
                   <td>チャット</td>
                   <td>共通</td>
                   <td>共通</td>
-                  <td>優先対応</td>
+                  <td>共通</td>
                 </tr>
                 <tr>
                   <td>最低契約期間</td>
